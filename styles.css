@@ -18,7 +18,7 @@ body {
 h1 {
   background: #6003C3;
   color: #FFFFFF;
-  font-size: 7rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -30,7 +30,7 @@ p {
 }
 
 .boxes {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -39,33 +39,36 @@ p {
 }
 
 #box-1 {
-  height: 13rem;
-  width: 13rem;
+  height: 10rem;
+  width: 10rem;
   background-color: #FCFF00;
   color: #6003C3;
-  padding: 10px;
+  padding: .5rem;
   border: solid 1rem #6003C3;
   margin: 1rem;
+  border-radius: 1rem;
 }
 
 #box-2 {
-  height: 13rem;
-  width: 13rem;
+  height: 10rem;
+  width: 10rem;
   background-color: #57FFC9;
   color: #6003C3;
-  padding: 10px;
+  padding: .5rem;
   border: solid 1rem  #6003C3;
   margin: 1rem;
+  border-radius: 1rem;
 }
 
 #box-3 {
-  height: 13rem;
-  width: 13rem;
+  height: 10rem;
+  width: 10rem;
   background-color: #A5FF01;
   color: #6003C3;
-  padding: 10px;
+  padding: .5rem;
   border: solid 1rem  #6003C3;
   margin: 1rem;
+  border-radius: 1rem;
 }
 
 .box {
@@ -73,4 +76,92 @@ p {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+}
+
+/*===========================
+
+Responsive Web Coding - 768px by 1024px (Tablet)
+
+===========================*/
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 11rem;
+  }
+
+  p {
+    font-size: 3.2rem;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+/*===========================
+
+Responsive Web Coding - 1024px by 768px (Laptop)
+
+===========================*/
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 14rem;
+  }
+
+  #box-1 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  #box-2 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  #box-3 {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .boxes {
+    font-size: 10rem;
+    justify-content: space-around;
+  }
+}
+
+/*===========================
+
+Responsive Web Coding - 2560px by 1440px (Desktop)
+
+===========================*/
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 19rem;
+  }
+  p {
+    font-size: 4rem;
+  }
+
+  #box-1 {
+    height: 17rem;
+    width: 17rem;
+  }
+
+  #box-2 {
+    height: 17rem;
+    width: 17rem;
+  }
+
+  #box-3 {
+    height: 17rem;
+    width: 17rem;
+  }
+
+  .boxes {
+    font-size: 11rem;
+  }
 }
