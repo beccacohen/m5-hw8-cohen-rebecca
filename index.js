@@ -17,16 +17,26 @@ var losses = document.getElementById('losses')
 console.log(losses)
 
 // target all .box elements and attach a click event listener to each one using a loop
-
+var box = document.querySelectorAll('.box')
+console.log(box)
 
 
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
+for (var i = 0; i < box.length; i++) {
+  box[i].onclick = function (e) {
+    var num = Number (this.textContent)
+    var rnum = randomIntFromInterval(1,3)
+    console.log(rnum)
 
+  }
+}
 
 // convert that value to a Number and store it to a variable
 // create a random number between 1-3 and store it to a variable
-
+function randomIntFromInterval(min, max) { // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
 
 // This number will represent the winning box
 
