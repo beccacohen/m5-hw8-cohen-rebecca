@@ -5,10 +5,16 @@ var lose = [
   'Sorry not this time'] //2
 
 // Create variables to count wins and losses
-
+var countWin = 0
+var countLose = 0
 
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
-
+var message = document.getElementById('message')
+console.log(message)
+var wins = document.getElementById('wins')
+console.log(wins)
+var losses = document.getElementById('losses')
+console.log(losses)
 
 // target all .box elements and attach a click event listener to each one using a loop
 
