@@ -78,6 +78,13 @@ p {
   justify-content: center;
 }
 
+.score {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6003C3;
+}
 /*===========================
 
 Responsive Web Coding - 768px by 1024px (Tablet)
@@ -97,6 +104,18 @@ Responsive Web Coding - 768px by 1024px (Tablet)
     display: flex;
     justify-content: center;
     flex-direction: row;
+  }
+  .score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #wins {
+    padding: 1rem;
+  }
+
+  #losses {
+    padding: 1rem;
   }
 }
 
@@ -163,5 +182,9 @@ Responsive Web Coding - 2560px by 1440px (Desktop)
 
   .boxes {
     font-size: 11rem;
+  }
+
+  .score {
+    font-size: 4rem;
   }
 }
