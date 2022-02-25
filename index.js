@@ -20,7 +20,8 @@ console.log(losses)
 var box = document.querySelectorAll('.box')
 console.log(box)
 
-
+wins.textContent = "Wins: 0"
+losses.textContent = "Loss: 0"
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
 for (var i = 0; i < box.length; i++) {
@@ -29,6 +30,14 @@ for (var i = 0; i < box.length; i++) {
     var rnum = randomIntFromInterval(1,3)
     console.log(rnum)
 
+    if (rnum == num) {
+      wins.innerHTML = "Wins: " + ++countWin
+      message.innerHTML = "You win"
+    }
+    else {
+      losses.innerHTML = "Loss: " + ++countLose
+      message.innerHTML = lose[randomIntFromInterval(0,2)]
+    }
   }
 }
 
